@@ -1,0 +1,9 @@
+FROM scratch
+
+MAINTAINER Lucas Serven <lucas.serven@coreos.com>
+
+ARG ARCH
+
+COPY bin/${ARCH}/tectonic-stats-test /tectonic-stats-test
+
+ENTRYPOINT ["/tectonic-stats-test"]
