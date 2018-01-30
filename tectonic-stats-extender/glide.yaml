@@ -1,4 +1,4 @@
-package: github.com/coreos-inc/tectonic/stats-extender
+package: github.com/coreos/container-images/tectonic-stats-extender
 import:
 - package: github.com/Sirupsen/logrus
 - package: github.com/coreos-inc/tectonic-licensing
@@ -11,3 +11,11 @@ import:
   version: c7bacac2b21ca01afa1dee0acf64df3ce047c28f
   subpackages:
   - golint
+- package: cloud.google.com/go
+  version: a5913b3f7deecba45e98ff33cefbac4fd204ddd7
+- package: google.golang.org/api
+  version: 295e4bb0ade057ae2cfb9876ab0b54635dbfcea4
+- package: k8s.io/client-go
+  version: v6.0.0
+- package: google.golang.org/grpc
+  version: 172ccacff3cfbddedcf1ba5ea06cda943bc976c1
