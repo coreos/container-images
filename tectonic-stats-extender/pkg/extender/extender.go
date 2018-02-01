@@ -92,8 +92,8 @@ func (e *Extender) getLicense() (*license.License, error) {
 
 	decodedLicense, err := license.Decode(publicKey.(*rsa.PublicKey), string(licenseBytes))
 	if err != nil {
-		return "", fmt.Errorf("failed to decode license: %v", err)
+		return nil, fmt.Errorf("failed to decode license: %v", err)
 	}
 
-	return decodedLicense.AccountID, nil
+	return decodedLicense, nil
 }

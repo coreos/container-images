@@ -7,8 +7,8 @@ import (
 
 	log "github.com/Sirupsen/logrus"
 
-	"github.com/coreos-inc/tectonic/stats-extender/pkg/extender"
-	"github.com/coreos-inc/tectonic/stats-extender/pkg/version"
+	"github.com/coreos/container-images/tectonic-stats-extender/pkg/extender"
+	"github.com/coreos/container-images/tectonic-stats-extender/pkg/version"
 )
 
 func main() {
